@@ -1,0 +1,84 @@
+.second-section {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.0625rem solid #2C2E33;
+
+}
+
+.second-section div {
+    color: white;
+    width: 80%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    border-bottom: 0.0625rem solid #2C2E33;
+    flex: 1;
+
+}
+
+
+
+  <div class="sample">
+                        <div style="background-color: blue;" class="vertical">
+                            <img style="height: 50px;" src="/sun.png" alt="">
+                        </div>
+
+                        <div class="vertical-two">
+                            <span>anonymous</span>
+                            <span style="font-style: italic;">5 minutes ago</span>
+                        </div>
+                    </div>
+
+
+  <!-- <div>
+            <div class="welcome-message">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-info-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                    </svg>
+                    <span>Welcome to Quickrant Clone</span>
+                </div>
+                <div>
+                    <span>Fully anonymous. Free forever. Express yourself without yourself.</span>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+.welcome-message div :nth-child(2) {
+    color: #6741d9;
+    font-weight: 700;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.welcome-message div {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.welcome-message div svg {
+    padding-top: 2px;
+}
+
+/* .second-section div div {
+    width: 50%;
+    border: none;
+} */

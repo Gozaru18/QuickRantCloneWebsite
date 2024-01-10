@@ -1,0 +1,118 @@
+.side-bar {
+    position: fixed;
+    width: 300px;
+    background-color: rgb(139, 125, 125);
+    bottom: 0;
+    top: 68px;
+    border-right-color: rgb(44, 46, 51);
+    padding-top: 15px;
+    border-right: 0.0625rem solid #2C2E33;
+}
+
+.aside-bar {
+    border-bottom: 0.0625rem solid #2C2E33;
+    padding-bottom: 10px;
+}
+
+.home-page,
+.Search-Page {
+    width: 256px;
+    height: 50px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    padding: 10px 0 0 10px;
+    transition: background-color 0.15s;
+}
+
+.home-page:hover,
+.Search-Page:hover {
+    background-color: rgb(139, 136, 136);
+    cursor: pointer;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #A6A7AB;
+    background-color: rgb(16, 17, 19);
+}
+
+.another-side {
+    height: 78%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.another-side nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.another-side nav :first-child {
+    background-color: #6741d9;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 225px;
+    height: 35px;
+    border-radius: 2px;
+    transition: opacity 0.15s;
+}
+
+.another-side nav :last-child {
+    background-color: rgb(16, 17, 19);
+    color: #6741d9;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    width: 225px;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid #6741d9;
+    transition: opacity 0.15s;
+
+}
+
+.another-side nav :last-child:hover,
+.another-side nav :first-child:hover {
+    opacity: 0.9;
+}
+
+.another-side div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(16, 17, 19);
+    width: 120px;
+    margin-top: auto;
+    border-radius: 75px;
+    margin-bottom: 10px;
+    color: rgb(139, 136, 136);
+    border: 1px solid white;
+    font-size: 12px;
+}
+
+.another-side div strong::before {
+    content: '\2022';
+    color: green;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:1000px) {
+    .side-bar {
+        display: none;
+        transition: display 0.15s;
+    }
+}

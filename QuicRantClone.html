@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRant Clone</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+        integrity="...">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.25.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/Main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img src="quickrant-text-white-small.webp" alt="">
+            <h4>Asia</h4>
+        </div>
+
+        <div class="right-side-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-brightness-low" viewBox="0 0 16 16">
+                <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8m.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707" />
+            </svg>
+            <input type="search" name="Search" placeholder="Search" id="Search">
+            <button>Search</button>
+            <div class="online">
+                <strong>1 ONLINE</strong>
+            </div>
+        </div>
+    </header>
+    <nav class="side-bar">
+        <nav class="aside-bar">
+            <div class="home-page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path
+                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                </svg>
+                <strong>Home</strong>
+            </div>
+            <div class="Search-Page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+                <strong>Search</strong>
+            </div>
+        </nav>
+
+        <section class="another-side">
+            <nav>
+                <button>Rant Now</button>
+                <em style="color: #A6A7AB;">or</em>
+                <button>Sign in</button>
+            </nav>
+            <div>
+                <strong>1 USER ONLINE</strong>
+            </div>
+        </section>
+        <div class="policy">
+            <ul>
+                <li style="list-style-type: none;">Privacy Policy</li>
+                <li>Cookie Policy</li>
+                <li>Disclaimer</li>
+            </ul>
+        </div>
+    </nav>
+    <Main class="main">
+        <div class="second-section">
+            <div class="welcome-message">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(208, 191, 255)"
+                        class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                    </svg>
+                    <span>Welcome to Quickrant Clone</span>
+                </div>
+                <div>
+                    <span>Fully anonymous. Free forever. Express yourself without yourself.</span>
+                </div>
+            </div>
+            <div class="first-row-section">
+                <div>
+                    <div class="first-row">
+
+                        <img class="profile-pic" src="/tripkolng.jpg" alt="">
+                        <div class="content-user">
+                            <em>Chips</em>
+                            <em>10 minutes ago</em>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et iste veritatis eligendi non ab
+                        nostrum dignissimos dolorum quis molestias, quos soluta, necessitatibus repellendus optio
+                        exercitationem iure nemo suscipit sed.
+                    </div>
+                    <div class="third-row">
+                        <button>
+                            <img class="btn-comment" src="/comment.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/heart.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/more.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="first-row-section">
+                <div>
+                    <div class="first-row">
+
+                        <img class="profile-pic" src="/tripkolng.jpg" alt="">
+                        <div class="content-user">
+                            <em>Fish Tea</em>
+                            <em>20 minutes ago</em>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ut hic laborum, qui rem
+                        fugit mollitia quo eum, expedita quasi, labore reprehenderit deleniti quod reiciendis nemo. Sed
+                        quas voluptatum mollitia!
+                    </div>
+                    <div class="third-row">
+                        <button>
+                            <img class="btn-comment" src="/comment.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/heart.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/more.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="first-row-section">
+                <div>
+                    <div class="first-row">
+
+                        <img class="profile-pic" src="/tripkolng.jpg" alt="">
+                        <div class="content-user">
+                            <em>Piattos</em>
+                            <em>1 hour ago</em>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquam quam explicabo debitis
+                        quod? Qui nostrum, illum, modi dolores unde sunt illo, iure dolore in aspernatur excepturi
+                        beatae voluptatem autem?
+                    </div>
+                    <div class="third-row">
+                        <button>
+                            <img class="btn-comment" src="/comment.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/heart.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/more.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="first-row-section">
+                <div>
+                    <div class="first-row">
+
+                        <img class="profile-pic" src="/tripkolng.jpg" alt="">
+                        <div class="content-user">
+                            <em>Cheezy</em>
+                            <em>2 hours ago</em>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem perferendis maiores facere
+                        veritatis, cum rerum recusandae quo saepe repellat nihil at harum qui! Illum non provident
+                        dolorum ipsa consectetur quas?
+                    </div>
+                    <div class="third-row">
+                        <button>
+                            <img class="btn-comment" src="/comment.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/heart.png" alt="">
+                            0
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/more.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="first-row-section">
+                <div>
+                    <div class="first-row">
+
+                        <img class="profile-pic" src="/tripkolng.jpg" alt="">
+                        <div class="content-user">
+                            <em>Clover</em>
+                            <em>3 hours ago</em>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem perferendis maiores facere
+                        veritatis, cum rerum recusandae quo saepe repellat nihil at harum qui! Illum non provident
+                        dolorum ipsa consectetur quas?
+                    </div>
+                    <div class="third-row">
+                        <button>
+                            <img class="btn-comment" src="/comment.png" alt="">
+                            4
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/heart.png" alt="">
+                            2
+                        </button>
+                        <button>
+                            <img class="btn-comment" src="/more.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Main>
+    <footer class="footer">
+        <section>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path
+                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="#7048e8" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                    <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"></path>
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                </svg>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+.main {
+    background-image: url(/bg-grid-dark.png);
+    width: auto;
+    height: 1000px;
+    padding-top: 65px;
+    padding-left: 300px;
+    box-sizing: border-box;
+
+}
+
+.second-section {
+    width: auto;
+    height: 100vh;
+    margin: 0 86px 0 86px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.second-row {
+    padding: 12px 0 12px 49px;
+}
+
+.third-row {
+    padding: 0 0 0 49px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-row button {
+    height: 35px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    color: #A6A7AB;
+    transition: opacity 0.15s;
+    opacity: 1;
+}
+
+.third-row button:hover {
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.384);
+    filter: blur(0.9);
+}
+
+.btn-comment {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+}
+
+.profile-pic {
+    height: auto;
+    width: 40px;
+    border-radius: 20px;
+
+}
+
+.content-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    margin-left: 10px;
+
+}
+
+.content-user :first-child {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.first-row-section {
+    color: #A6A7AB;
+    border-bottom: 0.0625rem solid #2C2E33;
+    height: max-content;
+}
+
+.second-section div {
+    height: auto;
+    width: 75%;
+    color: #A6A7AB;
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.first-row-section div {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-message {
+    height: auto;
+    background-color: rgba(103, 65, 217, 0.2);
+    border-bottom: 0.0625rem solid #2C2E33;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 20px;
+    margin-top: 20px;
+}
+
+.welcome-message :nth-child(1) :nth-child(2) {
+    color: rgb(208, 191, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+
+}
+
+.welcome-message :nth-child(2) :first-child {
+    color: white;
+    font-size: 15px;
+    font-weight: 700px;
+    white-space: nowrap;
+}
+
+/* @media (max-width: 900px)  */
+@media (max-width:900px) {
+    .welcome-message {
+        min-width: 500px;
+    }
+
+    .first-row-section {
+        min-width: 500px;
+    }
+
+    .main {
+        min-width: 600px;
+    }
+
+    .main {
+        margin-left: -190px;
+        margin-right: 100px;
+    }
+}

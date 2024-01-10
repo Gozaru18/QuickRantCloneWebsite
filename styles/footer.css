@@ -1,0 +1,32 @@
+@media only screen and (max-width:900px) {
+    .footer {
+        display: initial;
+        background-color: #2C2E33;
+        width: 100%;
+        height: auto;
+        color: white;
+        margin-top: -180px;
+        position: fixed;
+    }
+
+    .footer section {
+        width: auto;
+        height: 50px;
+        display: flex;
+        color: white;
+    }
+
+    .footer section div {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition: background-color 0.15s;
+    }
+
+    .footer section div:hover {
+        background-color: #3f3f41;
+        cursor: pointer;
+    }
+}
